@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to My Website</h1>
+        <p>This is the home page of our 3-page website project.</p>
+
+        <!-- Alert / Notification -->
+        <div class="alert alert-success" role="alert">
+            <strong>Success!</strong> Your changes have been saved.
+        </div>
+
+        <!-- Responsive Grid: 1 column mobile, 2 tablet, 3 desktop -->
+        <section class="grid" aria-label="Featured cards">
+            <article class="card">
+                <h2>Card One</h2>
+                <p>This is the first card in the responsive grid.</p>
+            </article>
+            <article class="card">
+                <h2>Card Two</h2>
+                <p>This is the second card in the responsive grid.</p>
+            </article>
+            <article class="card">
+                <h2>Card Three</h2>
+                <p>This is the third card in the responsive grid.</p>
+            </article>
+            <article class="card">
+                <h2>Card Four</h2>
+                <p>This is the fourth card in the responsive grid.</p>
+            </article>
+            <article class="card">
+                <h2>Card Five</h2>
+                <p>This is the fifth card in the responsive grid.</p>
+            </article>
+            <article class="card">
+                <h2>Card Six</h2>
+                <p>This is the sixth card in the responsive grid.</p>
+            </article>
+        </section>
+
+        <!-- Modal Window (CSS only) -->
+        <a href="#my-modal" class="btn">Open Modal</a>
+
+        <div id="my-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+            <div class="modal-content">
+                <a href="#" class="modal-close" aria-label="Close modal">&times;</a>
+                <h2 id="modal-title">Modal Title</h2>
+                <p>This modal is built using CSS only, with no JavaScript.</p>
+                <a href="#" class="btn">Close</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html> 
