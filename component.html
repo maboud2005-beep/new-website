@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Component Library - My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Component Library</h1>
+        <p>This page showcases all the UI components built for this project using HTML and CSS.</p>
+
+        <!-- 1. Buttons -->
+        <section>
+            <h2>Buttons</h2>
+            <button type="button">Standard Button</button>
+            <a href="#" class="btn">Link Button (.btn)</a>
+        </section>
+
+        <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ddd;">
+
+        <!-- 2. Alerts / Notifications -->
+        <section>
+            <h2>Alerts / Notifications</h2>
+            <div class="alert alert-success" role="alert">
+                <strong>Success!</strong> This is a success alert message.
+            </div>
+            <div class="alert alert-error" role="alert">
+                <strong>Error!</strong> This is an error alert message.
+            </div>
+        </section>
+
+        <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ddd;">
+
+        <!-- 3. Cards Grid -->
+        <section>
+            <h2>Cards</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Sample Card 1</h3>
+                    <p>This is a description inside a component card.</p>
+                </article>
+                <article class="card">
+                    <h3>Sample Card 2</h3>
+                    <p>This is a description inside another component card.</p>
+                </article>
+            </div>
+        </section>
+
+        <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ddd;">
+
+        <!-- 4. Form Elements Preview -->
+        <section>
+            <h2>Form Elements</h2>
+            <form>
+                <div>
+                    <label for="sample-input">Text Input:</label>
+                    <input type="text" id="sample-input" placeholder="Type something...">
+                </div>
+                <div>
+                    <label for="sample-select">Select Dropdown:</label>
+                    <select id="sample-select">
+                        <option value="">-- Choose an option --</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+
+        <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ddd;">
+
+        <!-- 5. Modal Trigger -->
+        <section>
+            <h2>Modal Window (CSS Only)</h2>
+            <p>Click the button below to test the pure CSS modal:</p>
+            <a href="#library-modal" class="btn">Open Modal</a>
+
+            <div id="library-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+                <div class="modal-content">
+                    <a href="#" class="modal-close" aria-label="Close modal">&times;</a>
+                    <h2 id="modal-title">Library Modal Title</h2>
+                    <p>This modal opens using CSS `:target` without any JavaScript.</p>
+                    <a href="#" class="btn">Close</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
